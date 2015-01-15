@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>M_Learning class: Eas</title>
+    <meta charset="utf8"/>
+
+		<link rel="stylesheet" href="css/stylesEas.css" type="text/css" media="screen">
+		
+		
+		<script src="js/jquery-1.9.1.js"></script>
+		<script src="js/eas.js"></script>
+		
+    <!-- google font -->
+    <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+
+  </head>
+  <body>
+		
+	<!-- BOZZA DI ESEMPIO contenuto dettaglio eas in overlay: NASCOSTO da riempire con i dati -->
+	<div id="eas_dett" style="width:70%; z-index:10; position:fixed; top:0px; left:15%; background:url(img/bg_dettaglio.png) repeat; height:100%; display:none; padding:40px; overflow:scroll;">
+		<p style="background:#fff; padding:30px; height:900px;">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.<br /><br />
+				
+				<iframe width="420" height="315" src="http://www.youtube.com/embed/u5CVsCnxyXg" frameborder="0" allowfullscreen></iframe>
+				
+		</p>
+		<p id="close_dett" style="background:#fff; padding:30px;"><br /><br />chiudi</p>
+	</div>
+	<!-- FINE BOZZA contenuto dettaglio -->
+	
+	
+	<!-- titolo e testo eas -->
+  <section id="eas">
+		<div class="cont_frecce left">
+			<span class="freccia_prev"></span>
+		</div>
+		<div class="testo_eas">
+			<h1>
+				<img src="img/ico_E_col.png" alt="ico_eas" />
+				titolo EAS di esempio
+			</h1>
+			<span>Ultima modifica: 21.08.2013 - 21:43:47</span>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+			</p>
+		</div>
+		<div class="cont_frecce right">
+			<span class="freccia_next"></span>
+		</div>
+		<div class="spacer"></div>
+	</section>
+	
+	<!-- fasi eas -->
+	<section id="fasiEas">
+		<!-- fasi -->
+		<div class="cont_fasi">
+			<div class="fase fase_prep">
+				<img src="img/preparatoria.jpg" alt="fase preparatoria" />	
+				<h1>fase preparatoria</h1>
+			</div>
+			<div class="divisorio_fasi">
+				<img src="img/freccia_eas.png" />	
+			</div>
+			<div class="fase fase_oper">
+				<img src="img/operatoria.jpg" alt="fase operatoria" />	
+				<h1>fase operatoria</h1>
+			</div>
+			<div class="divisorio_fasi">
+				<img src="img/freccia_eas.png" />	
+			</div>
+			<div class="fase fase_ristrut">
+				<img src="img/ristrutturativa.jpg" alt="fase ristrutturativa" />	
+				<h1>fase ristrutturativa</h1>
+			</div>
+			<div class="spacer"></div>
+		</div> <!-- fine div cont_fasi -->
+		
+		<!-- satelliti -->
+		<div class="cont_satelliti">
+			
+			<div class="col_satellite"> <!-- col satelliti preparatoria -->
+				<div class="satellite_singolo fase_prep">
+					<h1>MATERIALI</h1>
+					<h2><img src="img/ico_E_info_p.png" class="info_sat" alt="info preparatoria" /></h2>
+					<div class="spacer"></div>
+				</div>
+				<div class="satellite_singolo fase_prep">
+					<h1>FRAMEWORK</h1>
+					<h2><img src="img/ico_E_info_p.png" class="info_sat" alt="info preparatoria" /></h2>
+					<div class="spacer"></div>
+				</div>
+				<div class="satellite_singolo fase_prep">
+					<h1>STIMOLO</h1>
+					<h2><img src="img/ico_E_info_p.png" class="info_sat" alt="info preparatoria" /></h2>
+					<div class="spacer"></div>
+				</div>
+				<div class="satellite_singolo fase_prep">
+					<h1>CONSEGNA</h1>
+					<h2><img src="img/ico_E_info_p.png" class="info_sat" alt="info preparatoria" /></h2>
+					<div class="spacer"></div>
+				</div>
+
+			</div>
+			
+			
+			<div class="divisorio_fasi"></div>
+			
+			<div class="col_satellite"> <!-- col satelliti operatoria -->
+				<div class="satellite_singolo fase_oper">
+					<h1>STRUMENTI</h1>
+					<h2><img src="img/ico_E_info_o.png" class="info_sat" alt="info operatoria" /></h2>
+					<div class="spacer"></div>
+				</div>
+				<div class="satellite_singolo fase_oper">
+					<h1>PRODOTTI</h1>
+					<h2><img src="img/ico_E_info_o.png" class="info_sat" alt="info operatoria" /></h2>
+					<div class="spacer"></div>
+				</div>
+			</div>
+			
+			<div class="divisorio_fasi"></div>
+			
+			<div class="col_satellite"> <!-- col satelliti ristrutturativa -->
+				<div class="satellite_singolo fase_ristrut">
+					<h1>DEBRIEFING</h1>
+					<h2><img src="img/ico_E_info_r.png" class="info_sat" alt="info ristrutturativa" /></h2>
+					<div class="spacer"></div>
+				</div>
+				<div class="satellite_singolo fase_ristrut">
+					<h1>VALUTAZIONE</h1>
+					<h2><img src="img/ico_E_info_r.png" class="info_sat" alt="info ristrutturativa" /></h2>
+					<div class="spacer"></div>
+				</div>
+			</div>
+		
+			<div class="spacer"></div>
+		</div> <!-- fine div cont_satelliti -->
+		
+		
+	</section>
+  </body>
+</html>
