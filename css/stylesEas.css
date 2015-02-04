@@ -113,6 +113,10 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 	margin-right:10px;
 }
 
+.info_eas {
+	float:right !important;
+}
+
 .testo_eas span {
 	display: block;
 	font-size: 11px;
