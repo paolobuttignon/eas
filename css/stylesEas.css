@@ -115,6 +115,7 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 
 .info_eas {
 	float:right !important;
+	cursor:pointer;
 }
 
 .testo_eas span {
