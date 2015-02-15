@@ -145,6 +145,8 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 	width:100%;
 	background:#f7f7f7;
 	padding:50px 0px 10px 0px;
+	z-index: 1;  /*per far rimanere la fase in primo piano durante l'animazione dei satelliti*/
+	position: relative;
 }
 
 .cont_fasi > div:first-of-type {
@@ -198,6 +200,8 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 	width:100%;
 	background:#f7f7f7;
 	padding:10px 0px;
+	z-index: 0;  /*durante l'animazione iniziale i satelliti dovranno "sbucare" da sotto le fasi*/
+	position: relative;
 }
 
 .cont_satelliti > div:first-of-type {
@@ -215,6 +219,8 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 
 .satellite_singolo {
 	width:100%;
+	position: relative; /* per poter applicare l'animazione*/
+	top:-200px; /*inizialmente nascosti */
 }
 
 .satellite_singolo h1 {
