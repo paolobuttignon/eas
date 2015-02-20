@@ -221,11 +221,14 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 	width:100%;
 	position: relative; /* per poter applicare l'animazione*/
 	top:-200px; /*inizialmente nascosti */
+<<<<<<< HEAD
 	cursor:pointer;
 }
 
 .satellite_singolo:hover {
 	opacity:0.7;
+=======
+>>>>>>> FETCH_HEAD
 }
 
 .satellite_singolo h1 {
@@ -247,6 +250,7 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 	margin:15%;
 	cursor:pointer;
 }
+<<<<<<< HEAD
 
 
 /* dettagli in overlay */
@@ -300,3 +304,5 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 	margin: 0px;
 	padding: 30px 0px 0px 0px;
 }
+=======
+>>>>>>> FETCH_HEAD
