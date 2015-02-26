@@ -145,8 +145,6 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 	width:100%;
 	background:#f7f7f7;
 	padding:50px 0px 10px 0px;
-	z-index: 1;  /*per far rimanere la fase in primo piano durante l'animazione dei satelliti*/
-	position: relative;
 }
 
 .cont_fasi > div:first-of-type {
@@ -200,8 +198,6 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 	width:100%;
 	background:#f7f7f7;
 	padding:10px 0px;
-	z-index: 0;  /*durante l'animazione iniziale i satelliti dovranno "sbucare" da sotto le fasi*/
-	position: relative;
 }
 
 .cont_satelliti > div:first-of-type {
@@ -219,16 +215,6 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 
 .satellite_singolo {
 	width:100%;
-	position: relative; /* per poter applicare l'animazione*/
-	top:-200px; /*inizialmente nascosti */
-<<<<<<< HEAD
-	cursor:pointer;
-}
-
-.satellite_singolo:hover {
-	opacity:0.7;
-=======
->>>>>>> FETCH_HEAD
 }
 
 .satellite_singolo h1 {
@@ -250,59 +236,3 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 	margin:15%;
 	cursor:pointer;
 }
-<<<<<<< HEAD
-
-
-/* dettagli in overlay */
-
-/* contenitore overlay */
-#eas-dettaglio {
-    -webkit-transform: scale(0.8);
-       -moz-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-            transform: scale(0.8);
-}
-.popup_visible #eas-dettaglio {
-    -webkit-transform: scale(1);
-       -moz-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
-}
-
-#eas-dettaglio_background {
-	z-index:6000;
-}
-
-#eas-dettaglio_wrapper {
-	z-index:6001;
-}
-
-.testi_dettaglio {
-	background:#fff;
-	padding:20px;
-	width:80%;
-	margin:auto;
-	border:0px;
-	position:relative;
-}
-
-.testi_dettaglio p {
-	font-family: 'Open Sans', sans-serif;
-	text-align: left;
-	margin-top: 20px;
-	font-size: 13px;
-	line-height: 22px;
-	min-height: 120px;
-}
-
-.testi_dettaglio h1 {
-	color: #add84a;
-	font-family: 'Noto Serif', serif;
-	font-style: italic;
-	font-size: 22px;
-	font-weight: 400;
-	margin: 0px;
-	padding: 30px 0px 0px 0px;
-}
-=======
->>>>>>> FETCH_HEAD
