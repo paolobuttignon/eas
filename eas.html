@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="it">
+<!-- test -->
   <head>
     <title>M_Learning class: Eas</title>
     <meta charset="utf8"/>
 
 		<link rel="stylesheet" href="css/stylesEas.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="css/jquery-ui.1.11.2.css" type="text/css">
+
 		
 		
-		<script src="js/jquery-1.9.1.js"></script>
+		<script src="js/jquery-2.1.1.js"></script>
+		<script src="js/jquery-ui-1.11.2.js"></script>
+		<script src="js/jquery.popupoverlay.js"></script>
+
+		    <!-- tinymce -->
+    <script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript">
+    tinymce.init({
+        selector: "textarea.tinymce",
+        theme: "modern",
+        language : 'it',
+        plugins: [
+            "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+            "searchreplace wordcount visualblocks visualchars code fullscreen",
+            "insertdatetime media nonbreaking save table contextmenu directionality",
+            "emoticons template paste textcolor jbimages"
+        ],
+        toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright  alignjustify | bullist numlist outdent indent | link image jbimages",
+        toolbar2: "fontsizeselect formatselect fontselect",
+        toolbar3: "print preview media | forecolor backcolor emoticons",
+        image_advtab: true,
+        relative_urls: false,
+        style_formats: [
+            {title: 'Image Left', selector: 'img', styles: {
+                'float' : 'left', 
+                'margin': '0 10px 0 10px'
+            }},
+            {title: 'Image Right', selector: 'img', styles: {
+                'float' : 'right', 
+                'margin': '0 10px 0 10px'
+            }}
+          ],
+          extend_valid_elements: "iframe[src|title|width|height|allowfullscreen|frameborder]",
+        templates: [
+            {title: 'Test template 1', content: 'Test 1'},
+            {title: 'Test template 2', content: 'Test 2'}
+        ]
+    });
+    </script>
+
 		<script src="js/eas.js"></script>
 		
     <!-- google font -->
@@ -19,19 +61,37 @@
   </head>
   <body>
 		
-	<!-- BOZZA DI ESEMPIO contenuto dettaglio eas in overlay: NASCOSTO da riempire con i dati -->
-	<div id="eas_dett" style="width:70%; z-index:10; position:fixed; top:0px; left:15%; background:url(img/bg_dettaglio.png) repeat; height:100%; display:none; padding:40px; overflow:scroll;">
-		<p style="background:#fff; padding:30px; height:900px;">
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.<br /><br />
+	<!-- BOZZA DI ESEMPIO contenuto dettaglio eas in overlay -->
+	<div id="eas-dettaglio">
+		<div class="testi_dettaglio">
+				<h1>MATERIALI</h1>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.<br /><br />
+
 				
-				<iframe width="420" height="315" src="http://www.youtube.com/embed/u5CVsCnxyXg" frameborder="0" allowfullscreen></iframe>
-				
-		</p>
-		<p id="close_dett" style="background:#fff; padding:30px;"><br /><br />chiudi</p>
+				<iframe width="420" height="315" src="http://www.youtube.com/embed/u5CVsCnxyXg" frameborder="0" allowfullscreen></iframe><br /><br /><br /><br />
+
+
+
+				<textarea id="descrizione" name="descrizione" class="tinymce" id="descrizione"  style="height:300px;">testo eas</textarea><br /><br /><br /><br />
+			
+				</p>
+
+				<div style="position:absolute; bottom:65px; left:0px; text-align:center; width:100%; background-color:transparent; padding:0px; border:0px;">
+					<img src="img/frecciaup.png" style="text-align:center; width:30px; padding:0px; margin:0px;" />
+				</div>
+				<div style="position:absolute; bottom:0px; left:0px; margin:0px; width:100%; background-color:#add84a; height:70px; padding:0px; border:0px;">
+					<div style="width:95%; float:left; margin:12px 20px;">
+						<img src="img/save-button.png" style="text-align:center; width:40px; padding:0px; margin:0px 0px 0px 10px; cursor:pointer;" />
+						<img class="eas-dettaglio_close" src="img/close-button.png" style="float:right; width:40px; padding:0px; margin:0px; cursor:pointer;" />
+						<!-- <p class="eas-dettaglio_close" style="color:#555; width:100px; padding:0px; margin:0px;">Close</p> -->
+					</div>
+				</div>
+				<div class="spacer"></div>
+		</div>
 	</div>
 	<!-- FINE BOZZA contenuto dettaglio -->
-	
-	
+
+
 	<!-- titolo e testo eas -->
   <section id="eas">
 		<div class="cont_frecce left">
@@ -83,19 +143,16 @@
 		<div class="cont_satelliti">
 			
 			<div class="col_satellite"> <!-- col satelliti preparatoria -->
-				<div class="satellite_singolo fase_prep">
+				<div class="satellite_singolo fase_prep eas-dettaglio_open">
 					<h1>MATERIALI</h1>
-					<h2><img src="img/ico_E_info_p.png" class="info_sat" alt="info preparatoria" /></h2>
 					<div class="spacer"></div>
 				</div>
-				<div class="satellite_singolo fase_prep">
+				<div class="satellite_singolo fase_prep eas-dettaglio_open">
 					<h1>FRAMEWORK</h1>
-					<h2><img src="img/ico_E_info_p.png" class="info_sat" alt="info preparatoria" /></h2>
 					<div class="spacer"></div>
 				</div>
-				<div class="satellite_singolo fase_prep">
+				<div class="satellite_singolo fase_prep eas-dettaglio_open">
 					<h1>STIMOLO</h1>
-					<h2><img src="img/ico_E_info_p.png" class="info_sat" alt="info preparatoria" /></h2>
 					<div class="spacer"></div>
 				</div>
 
@@ -105,19 +162,16 @@
 			<div class="divisorio_fasi"></div>
 			
 			<div class="col_satellite"> <!-- col satelliti operatoria -->
-				<div class="satellite_singolo fase_oper">
+				<div class="satellite_singolo fase_oper eas-dettaglio_open">
 					<h1>CONSEGNA</h1>
-					<h2><img src="img/ico_E_info_o.png" class="info_sat" alt="info operatoria" /></h2>
 					<div class="spacer"></div>
 				</div>
-				<div class="satellite_singolo fase_oper">
+				<div class="satellite_singolo fase_oper eas-dettaglio_open">
 					<h1>STRUMENTI</h1>
-					<h2><img src="img/ico_E_info_o.png" class="info_sat" alt="info operatoria" /></h2>
 					<div class="spacer"></div>
 				</div>
-				<div class="satellite_singolo fase_oper">
+				<div class="satellite_singolo fase_oper eas-dettaglio_open">
 					<h1>PRODOTTI</h1>
-					<h2><img src="img/ico_E_info_o.png" class="info_sat" alt="info operatoria" /></h2>
 					<div class="spacer"></div>
 				</div>
 			</div>
@@ -125,14 +179,12 @@
 			<div class="divisorio_fasi"></div>
 			
 			<div class="col_satellite"> <!-- col satelliti ristrutturativa -->
-				<div class="satellite_singolo fase_ristrut">
+				<div class="satellite_singolo fase_ristrut eas-dettaglio_open">
 					<h1>DEBRIEFING</h1>
-					<h2><img src="img/ico_E_info_r.png" class="info_sat" alt="info ristrutturativa" /></h2>
 					<div class="spacer"></div>
 				</div>
-				<div class="satellite_singolo fase_ristrut">
+				<div class="satellite_singolo fase_ristrut eas-dettaglio_open">
 					<h1>VALUTAZIONE</h1>
-					<h2><img src="img/ico_E_info_r.png" class="info_sat" alt="info ristrutturativa" /></h2>
 					<div class="spacer"></div>
 				</div>
 			</div>
