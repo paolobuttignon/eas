@@ -156,6 +156,7 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 .fase {
 	width:26%;
 	float:left;
+	margin:auto;
 }
 
 .fase img {
@@ -221,11 +222,6 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 	width:100%;
 	position: relative; /* per poter applicare l'animazione*/
 	top:-200px; /*inizialmente nascosti */
-	cursor:pointer;
-}
-
-.satellite_singolo:hover {
-	opacity:0.7;
 }
 
 .satellite_singolo h1 {
@@ -246,57 +242,4 @@ a:link, a:visited, a:active { color:#000; text-decoration:none;
 	float:right;
 	margin:15%;
 	cursor:pointer;
-}
-
-
-/* dettagli in overlay */
-
-/* contenitore overlay */
-#eas-dettaglio {
-    -webkit-transform: scale(0.8);
-       -moz-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-            transform: scale(0.8);
-}
-.popup_visible #eas-dettaglio {
-    -webkit-transform: scale(1);
-       -moz-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
-}
-
-#eas-dettaglio_background {
-	z-index:6000;
-}
-
-#eas-dettaglio_wrapper {
-	z-index:6001;
-}
-
-.testi_dettaglio {
-	background:#fff;
-	padding:20px;
-	width:80%;
-	margin:auto;
-	border:0px;
-	position:relative;
-}
-
-.testi_dettaglio p {
-	font-family: 'Open Sans', sans-serif;
-	text-align: left;
-	margin-top: 20px;
-	font-size: 13px;
-	line-height: 22px;
-	min-height: 120px;
-}
-
-.testi_dettaglio h1 {
-	color: #add84a;
-	font-family: 'Noto Serif', serif;
-	font-style: italic;
-	font-size: 22px;
-	font-weight: 400;
-	margin: 0px;
-	padding: 30px 0px 0px 0px;
 }
